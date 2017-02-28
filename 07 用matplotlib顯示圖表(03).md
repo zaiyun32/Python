@@ -6,13 +6,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 產生常態分配亂數成績
-chi01=np.random.randn(100)*15+65
-eng01=np.random.randn(100)*15+65
+chi01=np.random.normal(65, 15, 100)   #產生100個平均=65, 標準差=15的成績
+eng01=np.random.normal(65, 15, 100)
 
-chi02=np.random.randn(100)*10+40
-eng02=np.random.randn(100)*10+40
+chi02=np.random.normal(40, 10, 100)   #產生100個平均=40, 標準差=10的成績
+eng02=np.random.normal(40, 10, 100)
 
 # 修正資料
+chi01.astype(int)
+eng01.astype(int)
+chi02.astype(int)
+eng02.astype(int)
+
 chi01=chi01.clip(0, 100)
 eng01=eng01.clip(0, 100)
 chi02=chi02.clip(0, 100)
