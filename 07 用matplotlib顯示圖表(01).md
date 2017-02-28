@@ -24,17 +24,20 @@
 ```
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 # 讀入資料
-scores=np.genfromtxt('scores.csv',  dtype=[('id', 'i'), ('name', 'S'), ('chi', 'i'), ('eng', 'i'), ('mat', 'i'), ('soc', 'i'), ('nat', 'i'), ('lec', 'i')], delimiter=',', usecols=(0, 1, 3, 4, 5, 6, 7, 8,), unpack=True)
-
+df=pd.read_csv('scores.csv', 
+	sep=',', 
+	names=['id', 'names', 'gender', 'chi', 'eng', 'mat', 'soc', 'nat', 'lec'])
+	
 # 設定字型及大小
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['font.size'] = 14
 
 # 待繪製的資料
-chi=scores['chi']
-eng=scores['eng']
+chi=df['chi']
+eng=df['eng']
 
 # 設定圖標題
 fig, ax = plt.subplots()
