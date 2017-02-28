@@ -195,20 +195,24 @@ plt.show()
 ```
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+
 
 # 讀入資料
-scores=np.genfromtxt('scores.csv',  dtype=[('id', 'i'), ('name', 'S'), ('gender', 'i'),  ('chi', 'i'), ('eng', 'i'), ('mat', 'i'), ('soc', 'i'), ('nat', 'i'), ('lec', 'i')], delimiter=',', usecols=(0, 1, 2, 3, 4, 5, 6, 7, 8,), unpack=True)
+df=pd.read_csv('scores.csv', 
+    sep=',', 
+    names=['id', 'names', 'gender', 'chi', 'eng', 'mat', 'soc', 'nat', 'lec'])
 
 # 設定字型及大小
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['font.size'] = 14
 
 # 待繪製的資料
-chi=scores['chi']
-eng=scores['eng']
-mat=scores['mat']
-soc=scores['soc']
-nat=scores['nat']
+chi=df['chi']
+eng=df['eng']
+mat=df['mat']
+soc=df['soc']
+nat=df['nat']
 all_data = [chi, eng, mat, soc, nat]
 
 # 設定圖標題
