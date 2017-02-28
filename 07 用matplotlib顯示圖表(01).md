@@ -82,17 +82,21 @@ plt.show()
 ```
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+
 
 # 讀入資料
-scores=np.genfromtxt('scores.csv',  dtype=[('id', 'i'), ('name', 'S'), ('gender', 'i'),  ('chi', 'i'), ('eng', 'i'), ('mat', 'i'), ('soc', 'i'), ('nat', 'i'), ('lec', 'i')], delimiter=',', usecols=(0, 1, 2, 3, 4, 5, 6, 7, 8,), unpack=True)
-
+df=pd.read_csv('scores.csv', 
+    sep=',', 
+    names=['id', 'names', 'gender', 'chi', 'eng', 'mat', 'soc', 'nat', 'lec'])
+	
 # 設定字型及大小
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['font.size'] = 14
 
 # 待繪製的資料
-eng=scores['eng']
-gender=scores['gender']
+eng=df['eng']
+gender=df['gender']
 
 # 性別資料(1,2)及顯示標籤(男, 女)
 x=[1, 2]  #在scores.csv中, 男:1, 女:2
@@ -117,11 +121,6 @@ plt.subplots_adjust(bottom=0.15)
 ax.grid(which='both')
 ax.grid(which='minor', alpha=0.5)
 ax.grid(which='major', alpha=0.8)
-
-#藍色:'b'      |  綠色: 'g'     |  紅色: 'r'     |  藍綠色:'c'    |  紅紫色:'m'   |  黃色:'y'         |  黑色:'k'    |  白色:'w'
-#實線:'-'      |  虛線: '--'    |  虛點線:'-.'   |  點線:':'      |  點:'.'       |
-#圓形:'o'      |  上三角:'^'    |  下三角:'v'    |  左三角:'<'    |  右三角:'>'   |  方形:'s'         |  加號:'+'    |  叉形:'x'     |  棱形:'D'  |   細棱形:'d'
-#三腳朝下:'1'  |  三腳朝上:'2'  |  三腳朝左:'3'  |  三腳朝右:'4'  |  六角形:'h'   |  旋轉六角形:'H'   |  五角形:'p'  |  垂直線:'|'
 
 # 繪製圖
 plt.plot(gender, eng, 'mx')
