@@ -124,6 +124,6 @@ tuple中的最大值: 9
 ```
 
 
-## 3. 沒有Mutable指令
+## 3. 沒有mutable物件特有的方法
 
 #### tuple是immutable物件, 即物件初值設定後內容即固定不變, 沒有類似append(), remove()等方法可再改變其內容.
