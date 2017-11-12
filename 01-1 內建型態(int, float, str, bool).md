@@ -1,4 +1,4 @@
-# 01-01 Python內建型態(int, float, str, bool)
+# 01-1 Python內建型態(int, float, str, bool)
 
 #### 內建型態(Built-in Types)可以在Python程式中直接使用, 不必預先import模組. 在 Python 中宣告變數後可直接指定一個特定值, 其變數型態自動設定為設定值的型態. 
 
