@@ -26,7 +26,30 @@ print('range(1, 10, 2):')
 
 for i in range(1, 10, 2):
     print(i)
+    # 建立一個range物件
+a=range(10)
+print(a)
+print('-'*30)
+
+# 逐個印出
+for i in range(10):
+    print(i)
+
+print('-'*30) 
+
+
+# 逐個印出(從1開始, 大於或等於10離開迴圈, 每次跳2)
+for i in range(1, 10, 2):
+    print(i)
     
+print('-'*30)  
+
+
+# 由range產生1個list
+b=list(range(10))
+print(b)
+print(type(b))
+print('-'*30) 
 print('-'*30)  
 
 
@@ -41,7 +64,6 @@ print('-'*30)
 ```
 range(0, 10)
 ------------------------------
-range(10):
 0
 1
 2
@@ -53,7 +75,6 @@ range(10):
 8
 9
 ------------------------------
-range(1, 10, 2):
 1
 3
 5
