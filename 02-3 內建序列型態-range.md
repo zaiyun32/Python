@@ -12,14 +12,14 @@ a=range(10)
 print(a)
 print('-'*30)
 
-# 逐個印出
+# 以迴圈逐個印出range所指的範圍內容, range(10)的範圍不包括10
 for i in range(10):
     print(i)
 
 print('-'*30) 
 
 
-# 逐個印出(從1開始, 大於或等於10為止, 每次跳2)
+# 逐個印出(從1開始, 大於或等於10離開迴圈, 每次跳2), range範圍不包括10
 for i in range(1, 10, 2):
     print(i)
     
