@@ -18,7 +18,7 @@ for i in a:
 print('-'*30)    
 
 
-# 印出a中的index及元素(range也是Python的序列型別)
+# 印出a中的index及元素(range也是Python的序列型態)
 for j in range(len(a)):
     print('第', j, '個元素:', a[j])
     
