@@ -1,4 +1,4 @@
-# 01-06 Python內建序列型態-tuple
+# 02-2 Python內建序列型態-tuple
 
 #### 在Python中宣告一個tuple, 可藉由寫一對小括號, 其中包括的多個由逗點隔開的元素. tuple物件的內容在設定後即不可再增減(immutable). 
 
