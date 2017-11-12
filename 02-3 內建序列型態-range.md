@@ -13,32 +13,13 @@ print(a)
 print('-'*30)
 
 # 逐個印出
-print('range(10):')  
-
 for i in range(10):
     print(i)
 
 print('-'*30) 
 
 
-# 逐個印出
-print('range(1, 10, 2):') 
-
-for i in range(1, 10, 2):
-    print(i)
-    # 建立一個range物件
-a=range(10)
-print(a)
-print('-'*30)
-
-# 逐個印出
-for i in range(10):
-    print(i)
-
-print('-'*30) 
-
-
-# 逐個印出(從1開始, 大於或等於10離開迴圈, 每次跳2)
+# 逐個印出(從1開始, 大於或等於10為止, 每次跳2)
 for i in range(1, 10, 2):
     print(i)
     
@@ -49,15 +30,7 @@ print('-'*30)
 b=list(range(10))
 print(b)
 print(type(b))
-print('-'*30) 
-print('-'*30)  
-
-
-# 由range產生1個list
-b=list(range(10))
-print(b)
-print(type(b))
-print('-'*30)  
+print('-'*30)   
 ```
 
 執行結果:
