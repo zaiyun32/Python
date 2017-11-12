@@ -1,6 +1,6 @@
 # 02-2 Python內建序列型態-tuple
 
-#### 在Python中宣告一個tuple, 可藉由一對小括號, 其中包括的多個由逗點隔開的元素組成. Tuple和list很像, 只不過tuple物件的內容在設定初值後即不可再增減內容(immutable). 
+#### 在Python中宣告一個tuple, 可藉由一對小括號, 其中包括的多個由逗點隔開的元素組成. Tuple和list很像, 只不過tuple物件在設定初值後即不可再增減內容(immutable). 
 
 
 ## 1. tuple
