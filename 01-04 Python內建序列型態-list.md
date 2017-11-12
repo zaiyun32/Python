@@ -5,45 +5,7 @@
 
 ## 1. list(清單)
 
-#### (1) 程式範例
-```javascript
-# 宣告一個list物件
-a=[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
-
-print(a)
-print(type(a))
-print('-'*40)
-
-# 增加1個元素(在最後面)
-a.append(10)
-print(a)
-print('-'*40)
-
-# 增加1個元素(在指定位置)
-a.insert(1, 100)
-print(a)
-print('-'*40)
-
-# 刪除list中的第1個符合元素
-a.remove(5)
-print(a)
-print('-'*40)
-```
-
-執行結果:
-```
-[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
-<class 'list'>
-----------------------------------------
-[2, 4, 5, 6, 2, 1, 4, 6, 8, 9, 10]
-----------------------------------------
-[2, 100, 4, 5, 6, 2, 1, 4, 6, 8, 9, 10]
-----------------------------------------
-[2, 100, 4, 6, 2, 1, 4, 6, 8, 9, 10]
-----------------------------------------
-```
-
-#### (2) 程式範例
+#### 程式範例
 ```javascript
 # 建立一個list物件
 a=[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
@@ -150,3 +112,63 @@ print('-'*30)
 ```
 
 
+
+
+## 3. 可以操作在Mutable序列型別的運算
+
+#### 完整資料建議查看Python文件
+```
+s[i] = x            item i of s is replaced by x	 
+s[i:j] = t          slice of s from i to j is replaced by the contents of the iterable t	 
+del s[i:j]          same as s[i:j] = []	 
+s[i:j:k] = t        the elements of s[i:j:k] are replaced by those of t
+del s[i:j:k]        removes the elements of s[i:j:k] from the list	 
+s.append(x)         appends x to the end of the sequence (same as s[len(s):len(s)] = [x])	 
+s.clear()           removes all items from s (same as del s[:])
+s.copy()            creates a shallow copy of s (same as s[:])
+s.extend(t)         extends s with the contents of t (for the most part the same as s[len(s):len(s)] = t)
+s += t              extends s with the contents of t (for the most part the same as s[len(s):len(s)] = t)	 
+s *= n              updates s with its contents repeated n times
+s.insert(i, x)      inserts x into s at the index given by i (same as s[i:i] = [x])	 
+s.pop([i])          retrieves the item at i and also removes it from s
+s.remove(x)         remove the first item from s where s[i] == x
+s.reverse()         reverses the items of s in place
+```
+
+#### 程式範例
+```javascript
+# 宣告一個list物件
+a=[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
+
+print(a)
+print(type(a))
+print('-'*40)
+
+# 增加1個元素(在最後面)
+a.append(10)
+print(a)
+print('-'*40)
+
+# 增加1個元素(在指定位置)
+a.insert(1, 100)
+print(a)
+print('-'*40)
+
+# 刪除list中的第1個符合元素
+a.remove(5)
+print(a)
+print('-'*40)
+```
+
+執行結果:
+```
+[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
+<class 'list'>
+----------------------------------------
+[2, 4, 5, 6, 2, 1, 4, 6, 8, 9, 10]
+----------------------------------------
+[2, 100, 4, 5, 6, 2, 1, 4, 6, 8, 9, 10]
+----------------------------------------
+[2, 100, 4, 6, 2, 1, 4, 6, 8, 9, 10]
+----------------------------------------
+```
