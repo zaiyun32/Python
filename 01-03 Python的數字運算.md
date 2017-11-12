@@ -26,7 +26,7 @@ divmod(x, y)  算出商數及餘數
 pow(x, y)     次方 
 ```
 
-### 
+#### 程式範例
 ```javascript
 q, r = divmod(10, 3)
 print('商數:', q)
@@ -52,7 +52,7 @@ print('-'*30)
 
 #### math模組(Module)中定義了e及pi等常數, 也定義了許多與數學相關的函式(Functions), 詳細內容建議查看Python文件.
 
-### 
+#### 程式範例
 ```javascript
 import math
 
@@ -101,7 +101,7 @@ print('-'*30)
 
 #### Python有許多外部模組可以引用, 有些模組可以快速解決某些特定領域的問題, 以下以numpy為例.
 
-### 
+#### 程式範例
 ```javascript
 import numpy as np
 
