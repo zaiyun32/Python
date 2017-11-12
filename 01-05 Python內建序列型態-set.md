@@ -1,0 +1,182 @@
+# 01-05 Python內建序列型態-set
+
+#### 在Python中宣告一個set(集合)物件, 可藉由寫一對大括號, 其中包括的多個由逗點隔開的元素. 在set中的元素不會重覆, 而set物件內容可在設定後再增減(mutable). 
+
+
+## 1. set(集合)
+
+#### 程式範例
+```javascript
+# 建立一個set物件
+a={2, 4, 5, 6, 2, 1, 4, 6, 8, 9}
+
+
+# 印出a中的所有元素
+for i in a:
+    print(i)
+    
+print('-'*30)    
+```
+
+執行結果:
+```
+1
+2
+4
+5
+6
+8
+9
+------------------------------
+```
+
+
+## 2. 可以操作在序列型別的運算
+
+#### 完整資料建議查看Python文件
+```
+x in s                True if an item of s is equal to x, else False
+x not in s            False if an item of s is equal to x, else True
+s + t                 the concatenation of s and t
+s * n or n * s        equivalent to adding s to itself n times
+s[i]                  ith item of s, origin 0
+s[i:j]                slice of s from i to j
+s[i:j:k]              slice of s from i to j with step k
+len(s)                length of s 
+min(s)                smallest item of s 
+max(s)                largest item of s 
+s.index(x[, i[, j]])  index of the first occurrence of x in s (at or after index i and before index j)
+s.count(x)            total number of occurrences of x in s
+```
+
+#### 程式範例
+```javascript
+# 建立一個set物件
+a={2, 4, 5, 6, 2, 1, 4, 6, 8, 9}
+
+
+print(a)
+print('-'*30)
+
+# 是否存在set中
+print('10是否存在:', 10 in a)
+print('-'*30) 
+
+print('5是否存在:', 5 in a)
+print('-'*30) 
+
+
+# 長度
+print('長度:', len(a))
+print('-'*30) 
+```
+
+執行結果:
+```
+{1, 2, 4, 5, 6, 8, 9}
+------------------------------
+10是否存在: False
+------------------------------
+5是否存在: True
+------------------------------
+長度: 7
+------------------------------
+```
+
+
+## 3. 可以操作在Set序列型別的運算
+
+#### 完整資料建議查看Python文件
+```
+update(*others)
+set |= other | ...
+Update the set, adding elements from all others.
+
+intersection_update(*others)
+set &= other & ...
+Update the set, keeping only elements found in it and all others.
+
+difference_update(*others)
+set -= other | ...
+Update the set, removing elements found in others.
+
+symmetric_difference_update(other)
+set ^= other
+Update the set, keeping only elements found in either set, but not in both.
+
+add(elem)
+Add element elem to the set.
+
+remove(elem)
+Remove element elem from the set. Raises KeyError if elem is not contained in the set.
+
+discard(elem)
+Remove element elem from the set if it is present.
+
+pop()
+Remove and return an arbitrary element from the set. Raises KeyError if the set is empty.
+
+clear()
+Remove all elements from the set.
+```
+
+#### (1)程式範例
+```javascript
+# 建立2個set物件
+a={5, 6, 8, 9, 3, 1, 8, 7, 5};
+b={5, 6, 12, 18, 20}
+
+print('a集合:', a)
+print('b集合:',b)
+print('-'*40)
+
+print('a,b交集', a & b)
+print('a,b聯集', a | b)
+print('a,b差集', a - b)
+print('-'*40)
+```
+
+執行結果:
+```
+a集合: {1, 3, 5, 6, 7, 8, 9}
+b集合: {5, 6, 12, 18, 20}
+----------------------------------------
+a,b交集 {5, 6}
+a,b聯集 {1, 3, 5, 6, 7, 8, 9, 12, 18, 20}
+a,b差集 {1, 3, 7, 8, 9}
+----------------------------------------
+```
+
+
+
+#### (2)程式範例
+```javascript
+# 建立1個set物件
+a={5, 6, 8, 9, 3, 1, 8, 7, 5};
+
+print(a)
+print(type(a))
+print('-'*30)
+
+# 增加1個元素
+a.add(10)
+print(a)
+print('-'*30)
+
+
+# 刪除set中符合元素
+a.remove(5)
+print(a)
+print('-'*30)
+```
+
+執行結果:
+```
+{1, 3, 5, 6, 7, 8, 9}
+<class 'set'>
+------------------------------
+{1, 3, 5, 6, 7, 8, 9, 10}
+------------------------------
+{1, 3, 6, 7, 8, 9, 10}
+------------------------------
+```
