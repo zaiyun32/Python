@@ -1,4 +1,4 @@
-# 01-02 Python內建型態轉換(int, float, str)
+# 01-2 Python內建型態轉換(int, float, str)
 
 #### 內建型態int, float及str之間可以使用內建函式(Built-in Functions)相互轉換. 
 
