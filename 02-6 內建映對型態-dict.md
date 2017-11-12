@@ -77,7 +77,7 @@ print('-'*30)
 
 
 
-## 2. 可以操作在映對型態的運算, 包括set(mutable)及frozenset(immutable)
+## 2. 可以操作在映對型態的運算
 
 #### 完整資料建議查看Python文件
 ```
