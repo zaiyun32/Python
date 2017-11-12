@@ -63,9 +63,9 @@ s * n or n * s        equivalent to adding s to itself n times
 s[i]                  ith item of s, origin 0
 s[i:j]                slice of s from i to j
 s[i:j:k]              slice of s from i to j with step k
-len(s)                length of s	 
-min(s)                smallest item of s	 
-max(s)                largest item of s	 
+len(s)                length of s 
+min(s)                smallest item of s 
+max(s)                largest item of s 
 s.index(x[, i[, j]])  index of the first occurrence of x in s (at or after index i and before index j)
 s.count(x)            total number of occurrences of x in s
 ```
@@ -118,18 +118,18 @@ print('-'*30)
 
 #### 完整資料建議查看Python文件
 ```
-s[i] = x            item i of s is replaced by x	 
-s[i:j] = t          slice of s from i to j is replaced by the contents of the iterable t	 
-del s[i:j]          same as s[i:j] = []	 
+s[i] = x            item i of s is replaced by x 
+s[i:j] = t          slice of s from i to j is replaced by the contents of the iterable t 
+del s[i:j]          same as s[i:j] = [] 
 s[i:j:k] = t        the elements of s[i:j:k] are replaced by those of t
-del s[i:j:k]        removes the elements of s[i:j:k] from the list	 
-s.append(x)         appends x to the end of the sequence (same as s[len(s):len(s)] = [x])	 
+del s[i:j:k]        removes the elements of s[i:j:k] from the list 
+s.append(x)         appends x to the end of the sequence (same as s[len(s):len(s)] = [x]) 
 s.clear()           removes all items from s (same as del s[:])
 s.copy()            creates a shallow copy of s (same as s[:])
 s.extend(t)         extends s with the contents of t (for the most part the same as s[len(s):len(s)] = t)
-s += t              extends s with the contents of t (for the most part the same as s[len(s):len(s)] = t)	 
+s += t              extends s with the contents of t (for the most part the same as s[len(s):len(s)] = t) 
 s *= n              updates s with its contents repeated n times
-s.insert(i, x)      inserts x into s at the index given by i (same as s[i:i] = [x])	 
+s.insert(i, x)      inserts x into s at the index given by i (same as s[i:i] = [x]) 
 s.pop([i])          retrieves the item at i and also removes it from s
 s.remove(x)         remove the first item from s where s[i] == x
 s.reverse()         reverses the items of s in place
