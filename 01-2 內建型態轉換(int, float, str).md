@@ -14,7 +14,8 @@ print(type(a))
 print('-'*30)
 
 
-# 將整數轉為浮點數(float()是內建函式)
+# 將整數轉為浮點數
+# float()是內建函式
 b=float(a) 
 print(b)
 print(type(b))
@@ -28,14 +29,16 @@ print(type(c))
 print('-'*30)
 
 
-# 將浮點數轉為整數(小數捨去, int()是內建函式)
+# 將浮點數轉為整數
+# 小數捨去, int()是內建函式
 e=int(c)
 print('小數捨去:', e)
 print(type(e))
 print('-'*30)
 
 
-# 將浮點數轉為整數(四捨五入, round()是內建函式)
+# 將浮點數轉為整數
+# 四捨五入, round()是內建函式
 f=round(c)
 print('四捨五入:', f)
 print(type(f))
@@ -73,7 +76,8 @@ print(type(a))
 print('-'*30)
 
 
-# 將整數轉為字串(str()是內建函式)
+# 將整數轉為字串
+# str()是內建函式
 b=str(a)
 print(b)
 print(type(b))
