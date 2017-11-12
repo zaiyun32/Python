@@ -31,7 +31,7 @@ print('-'*30)
 ```
 
 
-## 2. 可以操作在set及frozenset的運算
+## 2. 可以操作在set(mutable)及frozenset(immutable)的運算
 
 #### 完整資料建議查看Python文件
 ```
