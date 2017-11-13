@@ -67,8 +67,6 @@ print('-'*45)
 
 #### (3) 程式範例 (對dict排序)
 ```javascript
-import operator
-
 # 建立一個dict
 data={'1005':75, '1003':68, '1004':90, '1010':45, '1009':66, '1007':82, '1006':100, '1008':93, '1001':75, '1002':50}
 
@@ -86,7 +84,7 @@ print('-'*30)
 
 
 # 排序(由小到大)
-dataByValue = sorted(data.items(), key=operator.itemgetter(1))
+dataByValue = sorted(data.items(), key=lambda x:x[1])
 
 print('排序後, 由value排序')
 print(dataByValue)
