@@ -56,9 +56,6 @@ data=[81, 43, 95, 72, 35, 67]
 
 # 建立一個filter
 myFilter=filter(fn, data)
-print(myFilter)
-print(type(myFilter))
-print('-'*30)
 
 
 # 進行list元素的過濾(filter), 並印出結果
@@ -75,9 +72,6 @@ print('-'*30)
 
 執行結果:
 ```
-<filter object at 0x7f77e8566f28>
-<class 'filter'>
-------------------------------
 [81, 95, 72, 67]
 ------------------------------
 ------------------------------
