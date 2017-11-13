@@ -1,4 +1,4 @@
-# 03-3 Python的內建函式-filter.md
+# 03-3 Python的內建函式-filter
 
 
 ## 1. 關於lambda
