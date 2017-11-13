@@ -1,2 +1,2 @@
 # Python
-tomlin 的 Python 筆記
+林宏仁的Python筆記
