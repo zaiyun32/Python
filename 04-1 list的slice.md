@@ -9,7 +9,7 @@
 
 #### (1)程式範例
 ```javascript
-# 準備一個有100個資料的list
+# 準備一個有10個資料的list
 data=[]
 
 for i in range(10):
@@ -55,7 +55,7 @@ print('-'*50)
 
 #### (2)程式範例
 ```javascript
-# 準備一個有100個資料的list
+# 準備一個有10個資料的list
 data=[]
 
 for i in range(10):
@@ -104,7 +104,7 @@ print('-'*50)
 
 #### (3)程式範例
 ```javascript
-# 準備一個有100個資料的list
+# 準備一個有10個資料的list
 data=[]
 
 for i in range(10):
@@ -150,7 +150,7 @@ print('-'*50)
 
 #### (4)程式範例(append(), pop(), del)
 ```javascript
-# 準備一個有100個資料的list
+# 準備一個有10個資料的list
 data=[]
 
 for i in range(10):
