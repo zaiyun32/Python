@@ -23,7 +23,7 @@ print('-'*30)
 
 # 關閉檔案
 file.close()   
-```javascript
+```
 
 
 用with敘述:
