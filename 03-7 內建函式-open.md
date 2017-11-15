@@ -14,7 +14,7 @@ file = open('data.txt','r')
 
 # 每行依次讀入
 for line in file.readlines():  
-    line = line.strip()       
+    line = line.strip()  #去除頭尾空白及\n 
     print(line)
 
 print('-'*30)
