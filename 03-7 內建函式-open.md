@@ -16,7 +16,9 @@ file = open('data.txt','r')
 for line in file.readlines():  
     line = line.strip()       
     print(line)
-    
+
+print('-'*30)
+
 # 關閉檔案
 file.close()                  
 ```
