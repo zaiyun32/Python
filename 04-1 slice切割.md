@@ -1,4 +1,4 @@
-# 04-1 list的slice
+# 04-1 slice切割
 
 
 ## 1. slice切割
