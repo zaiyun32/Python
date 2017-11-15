@@ -180,3 +180,50 @@ fw.close()
 9,243
 10,243
 ```
+
+
+
+#### (4)程式範例
+```javascript
+# 開啟檔案(r:只讀)
+fr = open('in.txt','r')  
+
+# 一次全部讀入
+data = fr.read()
+
+# 刪除前後空白及\n
+data=data.strip()  
+
+# 將標點符號刪除
+puncts=[',', '.', ';', '!', '?']
+
+for punct in puncts:
+    data=data.replace(punct, '')
+    
+print(data)
+print('-'*30)
+
+# 以空白分割單詞
+vocs = data.split(' ')
+
+print(vocs)
+print('-'*30)
+
+# 關閉檔案
+fr.close()              
+```
+
+
+#### 測試檔案(in.txt)
+```
+With legacies as varied as its adventure landscape and spirited traditions thriving alongside the cream of Asian sophistication, Taiwan is a continent on one green island.
+```
+
+
+執行結果(out.txt)
+```
+With legacies as varied as its adventure landscape and spirited traditions thriving alongside the cream of Asian sophistication Taiwan is a continent on one green island
+------------------------------
+['With', 'legacies', 'as', 'varied', 'as', 'its', 'adventure', 'landscape', 'and', 'spirited', 'traditions', 'thriving', 'alongside', 'the', 'cream', 'of', 'Asian', 'sophistication', 'Taiwan', 'is', 'a', 'continent', 'on', 'one', 'green', 'island']
+------------------------------
+```
