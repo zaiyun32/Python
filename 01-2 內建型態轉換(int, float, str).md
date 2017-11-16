@@ -6,7 +6,7 @@
 ## 1. 數字間轉換
 
 #### 程式範例
-```javascript
+```python
 # 宣告一個整數
 a=100
 print(a)
@@ -68,7 +68,7 @@ print('-'*30)
 ## 2. 數字及文字間轉換
 
 #### 程式範例
-```javascript
+```python
 # 宣告一個整數
 a=100
 print(a)
