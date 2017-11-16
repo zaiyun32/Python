@@ -6,7 +6,7 @@
 ## 1. int (整數)
 
 #### (1) 程式範例
-```javascript
+```python
 # 宣告一個整數
 a=100
 print(a)
@@ -34,7 +34,7 @@ a和b是否同一物件? False
 ```
 
 #### (2) 程式範例
-```javascript
+```python
 import sys
 
 # 宣告一個整數
@@ -69,7 +69,7 @@ print('-'*30)
 ## 2. float (浮點數)
 
 #### (1) 程式範例
-```javascript
+```python
 import sys
 
 # 宣告一個浮點數
@@ -100,7 +100,7 @@ print('-'*30)
 ```
 
 #### (2) 程式範例
-```javascript
+```python
 import sys
 
 # 宣告一個浮點數
@@ -137,7 +137,7 @@ print('-'*30)
 在 Python 宣告字串可以使用 `單引號` 或 `雙引號`, 以下是一個例子:
 
 #### (1) 程式範例
-```javascript
+```python
 # 宣告一個字串
 a='Hello'
 print(a)
@@ -171,7 +171,7 @@ Hello你好
 ```
 
 #### (2) 程式範例
-```javascript
+```python
 # 宣告一個字串
 a='Hello'
 print(a)
@@ -211,7 +211,7 @@ ell
 
 在 Python 宣告布林值可設定為 `True` 或 `False`, 或是一個邏輯運算結果, 以下是一個例子:
 
-```javascript
+```python
 # 宣告一個布林
 a = True
 print(a)
