@@ -6,7 +6,7 @@
 ## 1. range
 
 #### 程式範例
-```javascript
+```python
 # 建立一個range物件
 a=range(10)
 print(a)
