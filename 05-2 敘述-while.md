@@ -1,13 +1,11 @@
 # 05-2 敘述-while
 
 
-## 1. while
-
-#### 用while進行重覆的工作. 迴圈內的敘述應該有相同的內縮.
+### 用while進行重覆的工作. 迴圈內的敘述應該有相同的內縮.
 
 
 #### (1)程式範例
-```javascript
+```python
 a=1
 
 while a<=100:
@@ -43,7 +41,7 @@ while a<=100:
 
 
 #### (2)程式範例
-```javascript
+```python
 import random
 
 while True:
