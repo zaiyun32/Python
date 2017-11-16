@@ -6,7 +6,7 @@
 ## 1. list(清單)
 
 #### 程式範例
-```javascript
+```python
 # 建立一個list物件
 a=[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
 
@@ -71,7 +71,7 @@ s.count(x)            total number of occurrences of x in s
 ```
 
 #### 程式範例
-```javascript
+```python
 # 建立一個list物件
 a=[2, 4, 5, 6, 2, 1, 4, 6, 8, 9, 2]
 print(a)
@@ -136,7 +136,7 @@ s.reverse()         reverses the items of s in place
 ```
 
 #### 程式範例
-```javascript
+```python
 # 宣告一個list物件
 a=[2, 4, 5, 6, 2, 1, 4, 6, 8, 9]
 
