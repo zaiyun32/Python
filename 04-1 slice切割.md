@@ -1,14 +1,12 @@
 # 04-1 slice切割
 
 
-## 1. slice切割
-
-#### 用list的index可以操作元素的增刪. 
+### 用list的index可以操作元素的增刪. 
 
 
 
 #### (1)程式範例
-```javascript
+```python
 # 準備一個有10個資料的list
 data=[]
 
@@ -54,7 +52,7 @@ print('-'*50)
 
 
 #### (2)程式範例
-```javascript
+```python
 # 準備一個有10個資料的list
 data=[]
 
@@ -105,7 +103,7 @@ print('-'*50)
 
 
 #### (3)程式範例(append(), pop(), del)
-```javascript
+```python
 # 準備一個有10個資料的list
 data=[]
 
