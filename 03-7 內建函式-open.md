@@ -1,14 +1,12 @@
 # 03-7 Python的內建函式-open
 
 
-## 1. 內建函式open()
-
-#### open()可以開啟檔案. 
+### open()可以開啟檔案. 
 
 
 
 #### (1)程式範例
-```javascript
+```python
 # 開啟檔案(r:只讀)
 file = open('data.txt','r')  
 
@@ -56,7 +54,7 @@ file.close()
 
 
 #### (2)程式範例
-```javascript
+```python
 # 開啟檔案(r:只讀)
 file = open('data.txt','r')  
 
@@ -117,7 +115,7 @@ file.close()
 
 
 #### (3)程式範例
-```javascript
+```python
 # 開啟檔案(r:只讀)
 fr = open('in.txt','r')  
 fw = open('out.txt','w')  
@@ -184,7 +182,7 @@ fw.close()
 
 
 #### (4)程式範例
-```javascript
+```python
 # 開啟檔案(r:只讀)
 fr = open('in.txt','r')  
 
