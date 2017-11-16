@@ -1,14 +1,12 @@
 # 03-9 Python的內建函式-input
 
 
-## 1. 內建函式input()
-
-#### 用input()處理鍵盤輸入. 
+### 用input()處理鍵盤輸入. 
 
 
 
 #### (1)程式範例
-```javascript
+```python
 w=input('寬(公分):')
 h=input('高(公分):')
 
