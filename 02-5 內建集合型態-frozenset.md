@@ -6,7 +6,7 @@
 ## 1. frozenset(集合)
 
 #### 程式範例
-```javascript
+```python
 # 建立一個set物件
 a=frozenset({2, 4, 5, 6, 2, 1, 4, 6, 8, 9})
 
@@ -57,7 +57,7 @@ copy()
 ```
 
 #### (1)程式範例
-```javascript
+```python
 # 建立一個set物件
 a=frozenset({2, 4, 5, 6, 2, 1, 4, 6, 8, 9})
 
@@ -91,7 +91,7 @@ frozenset({1, 2, 4, 5, 6, 8, 9})
 
 
 #### (2)程式範例
-```javascript
+```python
 # 建立2個set物件
 a=frozenset({5, 6, 8, 9, 3, 1, 8, 7, 5})
 b=frozenset({5, 6, 12, 18, 20})
