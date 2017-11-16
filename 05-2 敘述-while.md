@@ -49,10 +49,17 @@ import random
 while True:
     # 產生一個1~100的整數亂數
     a=random.randint(1, 100) 
-    print(a)
+
+    # 進行下一個迴圈
+    if a==50:
+        continue
     
+    # 離開迴圈    
     if a==10:
-        break        
+        break    
+
+    # 印出亂數
+    print(a)           
 ```
 
 
