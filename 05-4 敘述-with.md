@@ -1,16 +1,14 @@
 # 05-4 敘述-with
 
 
-## 1. with
-
-#### 用with敘述可以簡化讀寫檔案程式, 結束前不必關檔.
+### 用with敘述可以簡化讀寫檔案程式, 結束前不必關檔.
 
 
 #### (1)程式範例
 
 
 未用with敘述:
-```javascript
+```python
 # 開啟檔案(r:只讀)
 file = open('data.txt','r')  
 
@@ -27,7 +25,7 @@ file.close()
 
 
 用with敘述:
-```javascript
+```python
 # 開啟檔案, 在with的作用範圍中將檔案指定給file變數
 with open('data.txt','r') as file:
     for line in file.readlines():  
