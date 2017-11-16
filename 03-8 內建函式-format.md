@@ -1,14 +1,12 @@
 # 03-8 Python的內建函式-format
 
 
-## 1. 內建函式format()
-
-#### format()讓輸出格式變得簡單. 
+### format()讓輸出格式變得簡單. 
 
 
 
 #### (1)程式範例
-```javascript
+```python
 import math
 
 # 小數位數
