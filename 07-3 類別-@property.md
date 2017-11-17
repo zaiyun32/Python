@@ -19,7 +19,7 @@ class Student():
     def __init__(self, stuNo, stuName, gender=None):
         self.stuNo=stuNo
         self.stuName=stuName
-        self._gender=gender
+        self._gender=gender   #這行指令會呼叫@gender.setter方法
 
     #----------------------------------    
     # 取用gender屬性的方法
