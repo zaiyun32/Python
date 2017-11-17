@@ -13,8 +13,8 @@
 class Student():
     #------------------------------       
     # 建構元
-    # 為了重新定義gender的取存, 
-    # 其實際存放名稱改為 _gender.
+    # 為了重新定義gender屬性的取存, 
+    # 將實際存放名稱改為 _gender.
     #------------------------------   
     def __init__(self, stuNo, stuName, gender=None):
         self.stuNo=stuNo
