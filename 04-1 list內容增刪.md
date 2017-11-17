@@ -1,7 +1,7 @@
-# 04-1 slice切割
+# 04-1 list內容增刪
 
 
-### 用list的index可以操作元素的增刪. 
+### 用list的索引可以操作元素內容, 用list的append()及pop()方法可以增刪, 用del敘述可以刪除內容. 
 
 
 
