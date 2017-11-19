@@ -1,7 +1,7 @@
-# 08-1 資料型態(Data types)-datetime及date類別
+# 08-1 資料型態(Data types)-datetime及date
 
 
-### 在datetime模組(module)中, 有幾個與日期時間相關的類別可使用, 包括date, time, datetime, timedelta, tzinfo及timezone.
+### 在datetime模組(module)中, 有幾個與日期時間相關的類別(class)可使用, 包括date, time, datetime, timedelta, tzinfo及timezone.
 
 
 #### (1)程式範例
