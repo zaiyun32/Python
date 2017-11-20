@@ -13,10 +13,13 @@
 from collections import deque
 
 #--------------------------------------------------
-# append(data)及appendleft(data)
+# 產生一個deque實例
 #--------------------------------------------------
 dq=deque()
 
+#--------------------------------------------------
+# append(data)及appendleft(data)
+#--------------------------------------------------
 dq.append(10)
 dq.appendleft(20)
 print('動作: append(10)及appendleft(10)')
